@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(240, 78%, 98%);
+  background-image: url(bg-top.svg), url(bg-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: top right, bottom left;
+  scroll-behavior: smooth;
+}
+button {
+  margin: 8px auto;
+  padding-block: 12px;
+  width: 230px;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%) 40%,
+    hsl(237, 63%, 64%)
+  );
+  color: white;
+}
+button:hover {
+  background-image: linear-gradient(to right, white, white);
+  border: 1px solid hsl(237, 63%, 64%);
+  color: hsl(237, 63%, 64%);
+}
